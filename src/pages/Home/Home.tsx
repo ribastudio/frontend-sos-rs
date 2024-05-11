@@ -10,6 +10,7 @@ import { SessionContext } from '@/contexts';
 import { Filter } from './components/Filter';
 import { ShelterListView } from './components/ShelterListView';
 import { IFilterFormProps } from './components/Filter/types';
+import { DarkmodeToggle } from '@/components/DarkModeToggle/DarkModeToggle';
 
 const initialFilterData: IFilterFormProps = {
   search: '',
@@ -114,6 +115,7 @@ const Home = () => {
                 Bem vindo, {session.name}
               </h3>
             )}
+            <DarkmodeToggle />
             <Button
               variant="ghost"
               size="sm"

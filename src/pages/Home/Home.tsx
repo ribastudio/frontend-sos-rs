@@ -115,7 +115,6 @@ const Home = () => {
                 Bem vindo, {session.name}
               </h3>
             )}
-            <DarkmodeToggle />
             <Button
               variant="ghost"
               size="sm"
@@ -136,6 +135,7 @@ const Home = () => {
             >
               <RotateCw size={20} className="stroke-white" />
             </Button>
+            <DarkmodeToggle />
             {session && (
               <Button
                 loading={loadingSession}

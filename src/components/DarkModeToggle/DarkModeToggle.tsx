@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
-const DarkmodeToggle = () => {
+const DarkModeToggle = () => {
   const [currentTheme, setTheme] = useState(getInitialTheme());
 
   useEffect(() => {
@@ -36,12 +36,22 @@ const DarkmodeToggle = () => {
   return (
     <>
       {currentTheme === 'dark' ? (
-        <Sun width='1.875rem' height='1.875rem' onClick={toggleTheme} />
+        <Sun 
+        className='dark:stroke-red-300 hover:stroke-white'
+          width='1.875rem' 
+          height='1.875rem' 
+          onClick={toggleTheme} 
+        />
       ) : (
-        <Moon width='1.875rem' height='1.875rem' onClick={toggleTheme} />
+        <Moon
+          className='stroke-zinc-300 hover:stroke-zinc-100'
+          width='1.875rem' 
+          height='1.875rem' 
+          onClick={toggleTheme} 
+        />
       )}
     </>
   );
 }
 
-export { DarkmodeToggle };
+export { DarkModeToggle as DarkmodeToggle };

@@ -116,7 +116,7 @@ const Home = () => {
               </h3>
             )}
             <Button
-              variant="ghost"
+              variant="outline"
               size="sm"
               className="text-white gap-1 flex flex-gap items-center [&_svg]:hover:stroke-black"
               onClick={() =>

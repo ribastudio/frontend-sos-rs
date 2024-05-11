@@ -13,7 +13,7 @@ const Footer = React.forwardRef<
       ref={ref}
       {...rest}
       className={cn(
-        'flex w-full flex-col md:flex-row py-8 md:py-4 px-2 md-p4 gap-3 justify-center flex-wrap items-center bg-red-600',
+        'flex w-full flex-col md:flex-row py-8 md:py-4 px-2 md-p4 gap-3 justify-center flex-wrap items-center bg-red-600 dark:bg-rose-800',
         className
       )}
     >

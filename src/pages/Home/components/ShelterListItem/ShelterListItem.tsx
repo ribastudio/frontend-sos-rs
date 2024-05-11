@@ -44,14 +44,14 @@ const ShelterListItem = (props: IShelterListItemProps) => {
   return (
     <div className="flex flex-col p-4 w-full border-2 border-border rounded-md gap-1 relative">
       <Button size="sm" variant="ghost" className="absolute top-4 right-4">
-        <ChevronRight className="h-5 w-5" />
+        <ChevronRight className="h-5 w-5" color='blue'/>
       </Button>
       <div
         className="flex items-center gap-1"
         onClick={() => navigate(`/abrigo/${data.id}`)}
       >
         <h3
-          className="font-semibold text-lg  hover:cursor-pointer hover:text-slate-500"
+          className="font-semibold text-lg dark:text-[#b5b5b5] hover:cursor-pointer hover:text-slate-500 dark:hover:text-slate-300"
           onClick={onClick}
         >
           {data.name}

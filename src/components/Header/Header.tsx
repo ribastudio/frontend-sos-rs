@@ -25,9 +25,9 @@ const Header = React.forwardRef<HTMLDivElement, IHeader>((props, ref) => {
         {startAdornment}
         <h3 className="font-medium text-white">{title}</h3>
       </div>
-      <div className="flex items-center">
+      <nav className="flex items-center">
         <div className="cursor-pointer ">{endAdornment}</div>
-      </div>
+      </nav>
     </header>
   );
 });
